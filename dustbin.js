@@ -1,4 +1,4 @@
-class dustbin
+class Dustbin
 {
 	constructor(x,y)
 	{

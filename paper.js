@@ -1,4 +1,4 @@
-class paper
+class Paper
 {
     constructor(x,y){
         var options ={
@@ -13,10 +13,10 @@ class paper
     }
     display(){
         push();
-        if(keyDown(upArrowKey)){
-            this.body.velocityY = -3;
-        }
+        translate();
+        rotate();
         fill('white');
+        image(this.image,this.body.position.x,this.body.position.y);
         pop();
     }
 }
